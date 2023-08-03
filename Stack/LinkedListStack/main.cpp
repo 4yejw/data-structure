@@ -8,7 +8,8 @@ int ShowOption() {
 	cout << "4.Init" << endl;
 	cout << "5.IsEmpty" << endl;
 	cout << "6.ShowStack" << endl;
-	cout << "7.exit" << endl;
+	cout << "7.Size" << endl;
+	cout << "8.exit" << endl;
 	cout << "===================" << endl;
 	cout << "Choose Option:";
 	cin >> SelectedOption;
@@ -53,7 +54,10 @@ int main() {
 			cout << "Stack = ";
 			S.ShowStack();
 			break;
-		case 7://exit
+		case 7:
+			cout << "Size = " << S.Size() << endl;
+			break;
+		case 8://exit
 			KeepRunning = false;
 			break;
 		default:

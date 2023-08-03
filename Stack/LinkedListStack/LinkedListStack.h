@@ -7,6 +7,7 @@ using namespace std;
 typedef struct nodeRecord{
 	int Data;
 	struct nodeRecord* Next;
+	struct nodeRecord* Prev;
 }Node;
 
 typedef Node* Nptr;
@@ -20,7 +21,9 @@ public:
 	int GetTop();
 	void Init();
 	bool IsEmpty();
+	int Size();
 	void ShowStack();
 private:
 	Nptr Top; //stack top
+	int Count;
 };
