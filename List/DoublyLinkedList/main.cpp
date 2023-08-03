@@ -75,6 +75,7 @@ int main() {
 			break;
 		case 9:
 			KeepRunning = false;
+			L.Init();
 			break;
 		default:
 			cout << "Option is out of range" << endl;
