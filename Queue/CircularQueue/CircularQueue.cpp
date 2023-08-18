@@ -26,8 +26,10 @@ void CircularQueue::Dequeue() {
 	}
 }
 int CircularQueue::GetFront() {
-	if(IsEmpty())
+	if(IsEmpty()){
 		cout << "Queue is Empty" << endl;
+		return 0;
+	}
 	else 
 		return Queue[Front];
 }
