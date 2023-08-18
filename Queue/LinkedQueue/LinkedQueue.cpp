@@ -29,8 +29,10 @@ void LinkedQueue::Dequeue() {
 	}
 }
 int LinkedQueue::GetFront() {
-	if(IsEmpty())
+	if(IsEmpty()){
 		cout << "Queue is Empty" << endl;
+		return 0;
+	}
 	else 
 		return Front->Data;
 }
